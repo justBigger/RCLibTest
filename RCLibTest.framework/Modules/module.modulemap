@@ -1,0 +1,10 @@
+framework module RCLibTest {
+  umbrella header "RCLibTest.h"
+
+  export *
+  module * { export * }
+}
+
+module RCLibTest.Swift {
+    header "RCLibTest-Swift.h"
+}
