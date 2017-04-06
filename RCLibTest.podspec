@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RCLibTest'
-  s.version          = '0.1.0'
-  s.summary          = 'this is just a demo for RCLibTest.'
+  s.version          = '0.2.0'
+  s.summary          = 'this is just a demo for RCLibTest.this is just a demo for RCLibTest.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -32,10 +32,11 @@ Pod::Spec.new do |s|
   # s.source_files = 'RCLibTest/Classes/*'
   s.requires_arc = true
   s.platform = :ios, '8.0'
+  s.ios.deployment_target = "8.0"
   # s.ios.platform = :ios, '8.0'
-  s.ios.preserve_paths = 'RCLibTest.framework'
-  #s.ios.public_header_files = 'RCLibTest.framework/Headers/*.h'
-  s.ios.vendored_frameworks = 'RCLibTest.framework'
+  s.ios.preserve_paths = 'RCTestLib.framework'
+  # s.ios.public_header_files = 'RCLibTest.framework/Headers/*.h'
+  s.ios.vendored_frameworks = 'RCTestLib.framework'
 
   # s.resource_bundles = {
   #   'RCLibTest' => ['RCLibTest/Assets/*.png']
